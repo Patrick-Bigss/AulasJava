@@ -1,3 +1,5 @@
+package aulasJAVA;
+
 import java.util.Scanner;
 
 public class PrimeiraAula {
