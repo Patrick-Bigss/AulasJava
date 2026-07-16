@@ -3,7 +3,6 @@ package atividade4;
 import java.util.Scanner;
 
 public class exercicio1 {
-
     public static void abrirCofre() {
         Scanner entrada = new Scanner(System.in);
 
@@ -11,7 +10,6 @@ public class exercicio1 {
         int tentativas = 5;
 
         while (tentativas > 0) {
-
             System.out.print("Digite o código do cofre: ");
             codigo = entrada.nextInt();
 

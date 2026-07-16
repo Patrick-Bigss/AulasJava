@@ -14,11 +14,9 @@ public class exercicio4 {
         System.out.print("Digite o segundo número: ");
         int y = entrada.nextInt();
 
-        // Chama um método e passa o resultado para outro
         imprimirResultado(subtrairNumeros(x, y));
 
     }
-
     public static int subtrairNumeros(int x, int y) {
         return x - y;
     }
