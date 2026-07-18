@@ -1,0 +1,4 @@
+package atividade5;
+
+public class exercicio2 {
+}
