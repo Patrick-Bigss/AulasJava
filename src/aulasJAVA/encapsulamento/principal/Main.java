@@ -4,10 +4,12 @@ import aulasJAVA.encapsulamento.modelo.ContaBancaria;
 
 public class Main {
     public static void main(String[] args) {
-        ContaBancaria MinhaConta = new ContaBancaria("Patrick Leal",123456);
-        //MinhaConta.setTitular("Felipe");
-        //System.out.println(MinhaConta.getTitular());
-
-        MinhaConta.depositar(100);
+        ContaBancaria MinhaConta = new ContaBancaria("Patrick Leal");
+        System.out.println(MinhaConta.getTitular());
     }
+    ContaBancaria conta1 = new ContaBancaria("Patrick");
+    ContaBancaria conta2 = new ContaBancaria("João");
+    ContaBancaria conta3 = new ContaBancaria("Rosangela");
+
+
 }

@@ -1,29 +1,33 @@
 package aulasJAVA.encapsulamento.modelo;
 
 public class ContaBancaria {
-
     //Atributos dessa classe
     private String titular;
     private int numeroDaConta;
     private double saldo;
+    private static int NovoNumeroDaConta  = 1000;
 
     //Construtor dessa classe
-    public ContaBancaria(String titular, int numeroDaConta) {
+    public ContaBancaria(String titular) {
         this.titular = titular;
-        this.numeroDaConta = numeroDaConta;
-        this.saldo = 0.0;
+        this.numeroDaConta = NovoNumeroDaConta;
+        NovoNumeroDaConta++;
+        this.saldo =0.0;
     }
 
-    //é um metodo para pegar o valor dentro da instancia da classe
+    // é um metodo para pegar o valor dentro da instância da classe (no objeto)
     public String getTitular() {
         return titular;
     }
-    //
-    public void setTitular(String titular) {
-        this.titular = titular;
+
+    public int getNumeroDaConta() {
+        return numeroDaConta;
     }
 
-    //mudando o valor do objeto e não da classe - Só quando for estanciando (no objeto)
+    // é um metodo para modificar o valor dentro da instância da classe (no objeto) - setTitular
+
+    // um metodo criado para modificar o valor do saldo de um objeto
+
     public void depositar(double valor){
         if (valor > 0){
             this.saldo += valor;
@@ -40,6 +44,7 @@ public class ContaBancaria {
             System.out.println(valor+" foi retirado da conta");
         }
     }
+
     //metodo privados também so podem ser acessados dentro da classe que foram criados
 }
 
